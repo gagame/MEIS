@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<title> ESP32 matrix </title>
+		<link rel="stylesheet" type="text/css" href="example.css">
+	</head>
+	<body>
+		<div class="header">
+			ESP32 matrix
+			<input type="button" value="spelling" onclick="location.href='spelling'">
+			<input type="button" value="memory" onclick="toMemory()">
+			<input type="button" value="home" onclick="location.href='home'">
+		</div>
+		<div class="content">
+			<h1>matrix memory</h1>
+			<br>
+			<form name="myForm">
+			<input type="hidden" name="BROADCAST" id="BROADCAST">
+			矩陣選擇：
+			<select name="matrixSel" size=5 onChange="renew(this.selectedIndex);">
+			</select>
+			
+			矩陣內容：
+			<select name="member" size=5>
+				<option value="">請由左方選取系別
+			</select>
+			<br>
+			<br>
+			<input type="button" value="Submit" onclick="check()">
+			<br>
+			</form>
+			
+		</div>
+		<div class="footer"></div>
+		<script src="memory.js"></script>
+	</body>
+</html>
