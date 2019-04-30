@@ -1,0 +1,74 @@
+
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<style>
+.center {
+  margin: auto;
+  width: 60%;
+  padding: 10px;
+  text-align: center;
+}
+</style>
+</head>
+<h1>Tree topology</h1><br/>
+
+<body> 
+   
+	   <script> 
+		showpic();
+	function showpic(state){ 
+		var x=document.getElementById("mySelect").selectedIndex;
+	    var sel_value = document.getElementsByTagName("option")[x].id;
+		var h =  sel_value+state;
+		location.replace(h);
+		
+	} 
+	</script>
+		<form id="form1" runat="server"> 
+	        <div class="center"> 
+	            <select id="mySelect" style="font-size:50px;">
+					<option id="motor">motor</option>
+					<option id="8*8">8*8</option>
+				</select>
+				<br /><br /> 
+	        </div> 
+	    </form>  
+			<center><a href="javascript:showpic('on')"><button style="display: block; width: 20%; height:40px;font-size:30px;">ON</button></center></a><br/>
+			<center><a href="javascript:showpic('off')"><button style="display: block; width: 20%; height:40px;font-size:30px;">OFF</button></center></a><br/>
+			
+	
+	</body> 
+
+</html> 
+
+
+<!-- <html> 
+	<head> 
+		<title>tree_test</title> 
+	</head> 
+	<body> 
+	    <script> 
+		showpic();
+	function showpic(){ 
+		var x=document.getElementById("mySelect").selectedIndex;
+	    var sel_value = document.getElementsByTagName("option")[x].id;
+		document.write(sel_value); 
+	} 
+	</script>
+		<form id="form1" runat="server"> 
+	        <div> 
+	            <select id="mySelect">
+					<option id="led">led</option>
+					<option id="motor">motor</option>
+					<option id="8*8">8*8</option>
+				</select>
+				<br /><br /> 
+				<input type="button" onclick="showpic()" value="Alert id"> 
+				<a href="LEDOn"><button style="display: block; width: 100%;">ON</button></a><br/>
+	        </div> 
+	    </form>  
+	</body> 
+	</html>   -->
+	
+
